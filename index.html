@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href ="style.css">
+    <title>Body Mass Calculator</title>
+   
+
+</head>
+<body>
+    <div class = "container" >
+        <div class = "box">
+            <h1>BMI Calculator</h1>
+            <div class = "content"></div>
+            
+        
+    <div class = "input">
+    <label for ="height">age</label>
+    <input type = "text" class ="text-input" id ="age" autocomplete = "off" required/>
+
+    <div class = "gender">
+
+        <label class = "container">
+    <input type = "radio" name = "radio" id = "m"><p class ="text">male</p>
+    <span class ="checkmark"></span>
+        </label>
+
+        <label class = "container">
+    <input type ="radio" name ="radio"id ="m"><p class ="text">female</p>
+    <span class ="checkmark"></span>
+    </label>
+         
+        </div>
+
+        <div class ="containerHW">
+            <div  class = "inputH">
+         <label for ="height">height(cm)</label>
+        <input type = "number" id = "height" required>
+    
+    
+    </div class = "inputW">
+    <label for = "weight">weight(kg)</label>
+    <input type = "number" id = "weight" required>
+</div>
+</div>
+
+<button class ="calculate" id ="submit" onclick="calculate();">calculate BMI</button>
+</div>
+<div class = "result">
+    <p>Your BMI is</p>
+    <div id ="result"></div>
+    <p  class = "comment"></p>
+    </div>
+    <div class ="footer"><a class = "footer-text" target="_blank" href ="https://myskypower.net">by myskypower</a>
+
+
+
+
+</div>
+</div>
+
+<div id = "myModel" class = "modal"></div>
+
+
+
+<div id = "myModal" class = "modal">
+    <div class ="modal content">
+        <span class = "close">&times;</span>
+        <p id = "modal text"></p>
+    </div></div>
+
+
+
+    <script src = "script.js">
+  <a href ="bmi calculator-js.zip" target = "_blank" class = "link download">download source code</a>
+</script>
+</div>
+</body>
+</html>
